@@ -1,4 +1,9 @@
-function PokemonCard({ pokemon }) {
+type Pkn = {
+	name: string;
+	imgSrc?: string;
+};
+
+function PokemonCard({ pokemon }: { pokemon: Pkn }) {
 	return (
 		<figure className="pokemon-card">
 			{pokemon.imgSrc === undefined ? (
