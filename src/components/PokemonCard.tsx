@@ -3,6 +3,10 @@ type Pkn = {
 	imgSrc?: string;
 };
 
+/*interface PokeProps {
+	pokemon: Pkn;
+}*/
+
 function PokemonCard({ pokemon }: { pokemon: Pkn }) {
 	return (
 		<figure className="pokemon-card">
